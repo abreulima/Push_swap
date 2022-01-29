@@ -31,4 +31,7 @@
 FLAGS = -Wall -Werror -Wextra
 
 all:
-	gcc push_swap.c $(FLAGS) -o push_swap
+	gcc push_swap.c $(FLAGS) -o -L. libft/libft.a -o push_swap
+		
+bonus:
+	gcc checker.c $(FLAGS) -o -L. libft/libft.a -o checker
